@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Header.css";
 import {
   Collapse,
@@ -12,6 +12,7 @@ import {
   DropdownItem,
   NavbarText,
 } from "reactstrap";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ function Header(props) {
     <div>
       <Navbar {...props}>
         <NavbarBrand id="title" href="/">
-          Shop Cart
+          <Link to="/">Shop Cart</Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>

@@ -3,7 +3,7 @@ import CategoryItem from "../../components/CategoryItem/CategoryItem";
 
 export const Home = () => {
   return (
-    <div className="container">
+    <div className="container welcome-wrapper">
       <div className="row">
         <h2 className="home-title text-center">Welcome to Shop Cart</h2>
         <div

@@ -1,3 +1,4 @@
+import FilterProducts from "../../components/FilterProducts/FilterProducts";
 import ProductBox from "../../components/ProductBox/ProductBox";
 import "./ProductList.css";
 
@@ -6,7 +7,8 @@ const ProductList = () => {
     <div className="container">
       <div className="row">
         <h2 className="product-list-title text-center">All Products</h2>
-        <div className="product-list-wrapper d-flex flex-column">
+        <div className="product-list-wrapper d-flex flex-row">
+          <FilterProducts />
           {/* List of prodcuts /> */}
           <div className="product-list-box" id="productList">
             <ProductBox

@@ -6,6 +6,8 @@
 
 .product-list-box {
   flex-basis: 80%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-list-box .product-item {
@@ -14,10 +16,6 @@
   margin-bottom: 30px;
   box-shadow: 0px 1px 5px var(--light-gray);
   padding: 0.5rem;
-}
-
-.product-img {
-  height: 400px;
 }
 
 img {

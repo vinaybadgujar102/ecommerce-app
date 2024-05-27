@@ -27,7 +27,11 @@ export const Home = () => {
           <CategoryItem itemName="All Products" />
           {categories &&
             categories.map((category) => (
-              <CategoryItem key={category} itemName={category} />
+              <CategoryItem
+                itemName={category}
+                key={category}
+                filter={category}
+              />
             ))}
         </div>
         <div className="category-title text-center">
